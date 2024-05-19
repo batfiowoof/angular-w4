@@ -9,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrafficLightComponent implements OnInit {
   color: string = 'red';
+  crossButtonDisabled: boolean = false;
 
   constructor() {}
 
   ngOnInit() {
     this.color = 'red';
+    if (this.color === 'red)') {
+      this.crossButtonDisabled = true;
+    } else {
+      this.crossButtonDisabled = false;
+    }
+  }
+
+  clickButton() {
+    if (this.color === 'yellow') {
+      alert("That's not cool man. You're gonna get yourself killed!");
+    }
   }
 }

@@ -53,17 +53,6 @@ export class IntersectionComponent implements AfterViewInit {
     }, 5000);
   }
 
-  checkCross(direction: string) {
-    const light = this[direction + 'Light'];
-
-    if (light.color === 'yellow') {
-      alert('Wrong cross!');
-    }
-    if (light.color === 'red') {
-      alert('Cross is closed!');
-    }
-  }
-
   panicMode = false;
 
   startPanicMode() {

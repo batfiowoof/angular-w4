@@ -120,8 +120,3 @@
   background-color: grey;
   cursor: not-allowed;
 }
-
-.disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
